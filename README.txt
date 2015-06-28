@@ -1,12 +1,12 @@
-misc/uClib++ README
-^^^^^^^^^^^^^^^^^^^
+uClib++ README
+^^^^^^^^^^^^^^
 
 This directory contains a version of the uClibc++ C++ library.  This code
 originates from http://cxx.uclibc.org/ and has been adapted for NuttX by the
 RGMP team (http://rgmp.sourceforge.net/wiki/index.php/Main_Page).
 
-uClibc++ resides in the misc/ directory rather than in the main NuttX source
-tree due to licensing issues:  NuttX is licensed under the permissive
+uClibc++ resides in its own GIT repository rather than in the main NuttX
+source tree due to licensing issues:  NuttX is licensed under the permissive
 modified BSD License; uClibc, on the other hand, is licensed under the
 stricter GNU LGPL Version 3 license.
 
@@ -27,15 +27,15 @@ Installation of uClibc++
 
 If you wish to use uClibc++ with NuttX, you will be required to comply with
 the licensing requires of the GNU LGPL Version 3 license.  A simple
-installation script is provided at misc/uClibc++/install.sh that can be used
-to install the uClibc++ components into the NuttX source tree.
+installation script is provided at uClibc++/install.sh that can be used to
+install the uClibc++ components into the NuttX source tree.
 
-The install script takes only a single arguement: The path to the nuttx
-directory.  If your directory structure is the same as the GIT structure
-(with misc/ and nuttx/ at the same level), then uClibc++ can be installed
-using this command executed from the misc/uClibc++ directory:
+The install script takes only a single argument: The path to the nuttx
+directory.  If your directory structure has the uclibc++ aand the nuttx/
+at the same level, then uClibc++ can be installed using this command
+executed from the uClibc++ directory:
 
-  ./install.sh ../../nuttx
+  ./install.sh ../nuttx
 
 If you run the install.sh like this, then it will (1) make sure you
 understand that you have tainted the NuttX BSD license with LGPLv3, and (2)
@@ -121,7 +121,7 @@ required to build NuttX with the uClibc++ library incorporated:
 
 Here is how it works:
 
-There is a new file called Make.defs in misc/uClibc/libxx/uClibc++. After
+There is a new file called Make.defs in uClibc++/libxx/uClibc++. After
 installation, it will reside at nuttx/libxx/uClibc++. The
 nuttx/libxx/Makefile will (conditionally) include this Make.defs file:
 

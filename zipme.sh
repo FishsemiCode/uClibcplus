@@ -26,7 +26,7 @@ else
    if [ -x ${WD}/${UCLIBCXX_DIR}/${MYNAME} ] ; then
      MISCDIR=${WD}
    else
-     echo "You must cd into the misc/ or misc/${UCLIBCXX_DIR}/ directory to execute this script."
+     echo "You must cd into ${UCLIBCXX_DIR}/ or ..//${UCLIBCXX_DIR} directory to execute this script."
      exit 1
    fi
 fi

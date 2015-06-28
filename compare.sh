@@ -16,14 +16,14 @@ fi
 
 if [ ! -d libxx ]; then
   echo "ERROR: Directory libxx does not exist in this directory"
-  echo "       Please CD into the misc/uClibc++ directory and try again"
+  echo "       Please CD into the uClibc++ directory and try again"
   echo $usage
   exit 1
 fi
 
 if [ ! -d include ]; then
   echo "ERROR: Directory include does not exist in this directory"
-  echo "       Please CD into the misc/uClibc++ directory and try again"
+  echo "       Please CD into the uClibc++ directory and try again"
   echo $usage
   exit 1
 fi

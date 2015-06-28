@@ -12,9 +12,9 @@ licensing betweein uClibc++ and NuttX:  NuttX is licensed under the
 permissive modified BSD License; uClibc, on the other hand, is licensed
 under the stricter GNU LGPL Version 3 license.
 
-A simple installation script is provided at misc/uClibc++/install.sh that
-can be used to install the uClibc++ components into the NuttX source tree.
-See the README file in the top-level uClibc++ directory for instructions on
+A simple installation script is provided at uClibc++/install.sh that can
+be used to install the uClibc++ components into the NuttX source tree.  See
+the README file in the top-level uClibc++ directory for instructions on
 using the installation script.  If you wish to use uClibc++ with NuttX, you
 will be required to comply with the licensing requires of the GNU LGPL
 Version 3 license.
