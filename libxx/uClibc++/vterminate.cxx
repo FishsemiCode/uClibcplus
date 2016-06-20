@@ -16,7 +16,7 @@ namespace __gnu_cxx
 {
   void __verbose_terminate_handler()
   {
-     ldbg("PID %d: Terminating...\n", getpid());
+     lerr("ERROR: PID %d: Terminating...\n", getpid());
      abort();
   }
 }
