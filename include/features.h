@@ -176,17 +176,6 @@
 #define	__UCLIBC__		1
 
 #ifdef __UCLIBC__
-/* Load up the current set of uClibc supported features along
- * with the current uClibc major and minor version numbers.
- * For uClibc release 0.9.26, these numbers would be:
- *	#define	__UCLIBC_MAJOR__	0
- *	#define	__UCLIBC_MINOR__	9
- *	#define	__UCLIBC_SUBLEVEL__	26
- */
-# define __need_uClibc_config_h
-# include <bits/uClibc_config.h>
-# undef __need_uClibc_config_h
-
 /* For uClibc, always optimize for size -- this should disable
  * a lot of expensive inlining...
  * TODO: this is wrong! __OPTIMIZE_SIZE__ is an indicator of
