@@ -16,6 +16,7 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
+#include <cfloat>
 #include <climits>
 
 #ifndef __STD_HEADER_LIMITS
@@ -778,11 +779,11 @@ public:
   typedef double numeric_type;
 
   static const bool is_specialized = true;
-  static numeric_type min () { return __DBL_MIN__; }
-  static numeric_type max () { return __DBL_MAX__; }
-  static const int radix = __FLT_RADIX__;
-  static const int digits = __DBL_MANT_DIG__;
-  static const int digits10 = __DBL_DIG__;
+  static numeric_type min () { return DBL_MIN; }
+  static numeric_type max () { return DBL_MAX; }
+  static const int radix = FLT_RADIX;
+  static const int digits = DBL_MANT_DIG;
+  static const int digits10 = DBL_DIG;
   static const bool is_signed = true;
   static const bool is_integer = false;
   static const bool is_exact = false;
@@ -792,7 +793,7 @@ public:
 
   // Floating point specific.
 
-  static numeric_type epsilon () { return __DBL_EPSILON__; }
+  static numeric_type epsilon () { return DBL_EPSILON; }
   static numeric_type round_error () { return 0.5; }
   static const int min_exponent10 = -1; //How do I properly get this?
   static const int max_exponent10 = -1; //How do I properly get this?
