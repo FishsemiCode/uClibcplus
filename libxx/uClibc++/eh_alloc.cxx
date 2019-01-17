@@ -89,5 +89,6 @@ namespace __cxxabiv1
 
   extern "C" void __cxa_throw(void *thrown_exception, std::type_info *tinfo, void (*dest) (void *))
   {
+    abort();
   }
 }
